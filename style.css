@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/images/off.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(80vh);
+}
+.app{
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 40px;
+    background-color: rgb(95, 95, 95);
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.app h2{
+    color: white;
+    display: flex;
+    justify-content: flex-start ;
+}
+#input{
+    flex: 1;
+    outline: none;
+    border: none;
+    margin-left: 15px;
+    background: transparent;
+}
+.row{
+    margin-top: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 40px;
+}
+button{
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+#add:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px .5px inset;
+}
+#list > li{
+    list-style: none;
+    user-select: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 15px 20px 10px 40px;
+    position: relative;
+}
+#list > li::before{
+    content: '';
+    top: 15px;
+    left: 4px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/unchecked.png);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+#list > li.active::before {
+    background-image: url(/images/checked.png);
+    
+}
+#list > li.active{
+    text-decoration: line-through;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: aquamarine;
+}
+.addTask{
+    transform: rotate(45deg);
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+.addTask:hover{
+    background-color: bisque;
+}
+#list li ul{
+    list-style:circle;
+    text-decoration: line;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.act{
+    text-decoration: dotted;
+}
+.h3{
+    text-decoration: none;
+}
