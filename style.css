@@ -71,13 +71,13 @@ button{
     position: absolute;
     width: 24px;
     height: 24px;
-    background-image: url(/images/unchecked.png);
+    background-image: url(./images/unchecked.png);
     border-radius: 50%;
     background-size: cover;
     background-position: center;
 }
 #list > li.active::before {
-    background-image: url(/images/checked.png);
+    background-image: url(./images/checked.png);
     
 }
 #list > li.active{
@@ -130,3 +130,4 @@ ul li span:hover{
     text-decoration: none;
 
 }
+
